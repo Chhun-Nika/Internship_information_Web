@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className="sticky top-0 bg-white text-white p-7 shadow-lg">
+    <header className="sticky top-0 bg-white text-white p-7 shadow-lg z-10">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="main-color font-madimi text-4xl font-normal">innerSphere</h1>
 

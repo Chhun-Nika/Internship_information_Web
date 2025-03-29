@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SearchBar from "../components/Search";
 import Department from "../components/Department";
+import DepartmentData from "../data/DepartmentData";
 const Internship = () => {
   return (
     <div className="min-h-screen flex flex-col">
@@ -23,8 +24,9 @@ const Internship = () => {
         {/* department */}
         <div className="font-quicksand">
           <h2 className="main-color text-2xl font-medium">Browse jobs by your department</h2>
-          <Department />
+          <Department DepartmentData={DepartmentData}  />
         </div>
+        
 
         {/* companies */}
         <div>
