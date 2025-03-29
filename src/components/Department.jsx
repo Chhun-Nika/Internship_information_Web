@@ -1,4 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Department = ({ DepartmentData }) => {
     return (
@@ -14,9 +15,11 @@ const Department = ({ DepartmentData }) => {
                 {/* <button 
                     className="rounded-full bg-[#133E87] text-white font-medium flex items-center p-4 pl-6 pr-6 gap-4 mt-10"
                 >Learn more <FaArrowRight /></button> */}
-                {/* <Link to={department.link} className="rounded-full bg-[#133E87] text-white font-medium flex items-center p-4 pl-6 pr-6 gap-4 mt-10">
+                <Link 
+                    to={department.link} 
+                    className="w-1/2 rounded-full bg-[#133E87] text-white font-medium flex items-center p-4 pl-6 pr-6 gap-4 mt-10">
                     Learn more <FaArrowRight />
-                </Link> */}
+                </Link>
                 
               </div>
             ))}

@@ -3,6 +3,9 @@ import Home from './pages/Home';
 import Internship from './pages/Internship';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
+import ComputerSciencePage from './pages/ComputerScience';
+import TelecomPage from './pages/Network';
+import DigitalBusinessPage from './pages/Business';
 
 
 const App = () => {
@@ -13,6 +16,9 @@ const App = () => {
         <Route path="/internship" element={<Internship />} />
         <Route path="/about-us" element={<AboutUs />}/>
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/internship/computer-science" element={<ComputerSciencePage />} />
+        <Route path="/internship/telecom-networking" element={<TelecomPage />} />
+        <Route path="/internship/digital-business" element={<DigitalBusinessPage />} />
       </Routes>
     </Router>
   );
