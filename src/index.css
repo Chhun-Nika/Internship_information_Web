@@ -19,3 +19,11 @@
 .red-color {
   @apply text-[#9B1B30];
 }
+
+.lightblue-color {
+  @apply text-[#628ACE];
+}
+
+.darkgray-color {
+  @apply text-[#606060];
+}
