@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+.font-madimi {
+  font-family: 'Madimi One', sans-serif;
+}
+
+.main-color {
+  @apply text-[#133E87];
+}
+
+
+.gray-color {
+  @apply text-[#B2B2B2];
+}
+
+.red-color {
+  @apply text-[#9B1B30];
+}
