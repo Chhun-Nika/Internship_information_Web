@@ -3,11 +3,14 @@ import Footer from "../components/Footer";
 import SearchBar from "../components/Search";
 import Department from "../components/Department";
 import DepartmentData from "../data/DepartmentData";
+import Company from "../components/Company";
+import CompanyData from "../data/CompanyData";
+
 const Internship = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="p-8 font-quicksand pt-15 pl-25 ">
+      <main className="p-8 font-quicksand pt-15 pl-25 mb-40">
 
         {/* search */}
         <div>
@@ -22,15 +25,17 @@ const Internship = () => {
         </div>
 
         {/* department */}
-        <div className="font-quicksand">
-          <h2 className="main-color text-2xl font-medium">Browse jobs by your department</h2>
-          <Department DepartmentData={DepartmentData}  />
+        <div className="mt-15 font-quicksand mb-20">
+          <h2 className="main-color text-2xl font-medium mb-12">Browse jobs by your department</h2>
+          <Department DepartmentData={DepartmentData}/>
         </div>
         
 
         {/* companies */}
-        <div>
-
+        <div className="mt-30 font-quicksand">
+          <h2 className="main-color text-2xl font-medium mb-12">Popular Companies</h2>
+          <Company CompanyData={CompanyData}/>
+          <Company CompanyData={CompanyData}/>
         </div>
 
       </main>
