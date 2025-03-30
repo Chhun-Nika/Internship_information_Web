@@ -23,7 +23,7 @@ const ComputerScience = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="p-8">
+      <main className="p-8 font-quicksand pt-15 pl-25 mb-40">
         {/* Search Bar */}
         <div>
           <SearchBar 
@@ -47,7 +47,7 @@ const ComputerScience = () => {
               key={cat} 
               onClick={() => setCategory(cat)}
               className={`px-4 py-2 rounded ${category === cat ? 
-                "bg-[#628ace] text-white font-medium shadow-[0px_2px_6px_rgba(0,0,0,0.3)]" : " text-[#606060] font-medium "
+                "bg-[#628ace] hover:bg-[#8aa9d1] transition-colors duration-300 ease-in-out text-white font-medium hover:cursor-pointer shadow-[0px_2px_6px_rgba(0,0,0,0.3)]" : "text-[#606060]  hover:cursor-pointer hover:shadow-[0px_4px_8px_rgba(0,0,0,0.2)] font-medium transition-colors duration-300 ease-in-out"
               }`}
             >
               {cat}
@@ -64,8 +64,10 @@ const ComputerScience = () => {
                 logo={job.logo}
                 company={job.company}
                 picture={job.picture}
-                title={job.tittle}
+                tittle={job.tittle}
                 description={job.desciption}
+                link={job.link}
+                item={job}
               />
             ))
           ) : (

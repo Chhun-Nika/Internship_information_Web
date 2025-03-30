@@ -11,7 +11,8 @@ const NetworkData = [
         picture : networkPic,
         tittle : "Network Engineer",
         desciption : "Assist in configuring and maintaining 4G/5G networks, troubleshoot connectivity issues, and optimize telecom performance.",
-        category : "Telecom & NetWorking"
+        category : "Telecom & NetWorking",
+        link: "/internship/computer-science/software-developer"
     },
 
     {
@@ -20,7 +21,8 @@ const NetworkData = [
         picture : networkPic,
         tittle : "Telecom Engineer",
         desciption : "Work on radio frequency (RF) planning, fiber-optic networks, and telecom infrastructure expansion.",
-        category : "Telecom & NetWorking"
+        category : "Telecom & NetWorking",
+        link: "/internship/computer-science/software-developer"
     },
 
     {
@@ -29,7 +31,8 @@ const NetworkData = [
         picture : networkPic,
         tittle : "IoT & Smart Systems",
         desciption : "Develop IoT-based telecom solutions for smart cities, industrial automation, and connected devices.",
-        category : "Cyber Security"
+        category : "Cyber Security",
+        link: "/internship/computer-science/software-developer"
     },
 
     {
@@ -38,7 +41,8 @@ const NetworkData = [
         picture : networkPic,
         tittle : "Cloud Network",
         desciption : "Work on cloud-based financial systems, ensuring smooth and secure digital banking services.",
-        category : "Telecom & NetWorking"
+        category : "Telecom & NetWorking",
+        link: "/internship/computer-science/software-developer"
     },
 
     {
@@ -47,7 +51,8 @@ const NetworkData = [
         picture : networkPic,
         tittle : "Cybersecurity",
         desciption : "Protect banking infrastructure, configure firewalls, and prevent cyber threats.",
-        category : "Cyber Security"
+        category : "Cyber Security",
+        link: "/internship/computer-science/software-developer"
     },
 
     {
@@ -56,7 +61,8 @@ const NetworkData = [
         picture : networkPic,
         tittle : "AI & Machine",
         desciption : "Build AI models for financial forecasting, fraud detection, and risk assessment in banking.",
-        category : "Cyber Security"
+        category : "Cyber Security",
+        link: "/internship/computer-science/software-developer"
     },
 
     {
@@ -65,7 +71,8 @@ const NetworkData = [
         picture : networkPic,
         tittle : "IT Network Support",
         desciption : "Maintain network connectivity across Chip Mong’s offices, retail branches, and warehouses.",
-        category : "Telecom & NetWorking"
+        category : "Telecom & NetWorking",
+        link: "/internship/computer-science/software-developer"
     },
 
     {
@@ -74,7 +81,8 @@ const NetworkData = [
         picture : networkPic,
         tittle : "AI & Machine",
         desciption : "Build AI models for financial forecasting, fraud detection, and risk assessment in banking.",
-        category : "Cyber Security"
+        category : "Cyber Security",
+        link: "/internship/computer-science/software-developer"
     },
 
     {
@@ -83,7 +91,8 @@ const NetworkData = [
         picture : networkPic,
         tittle : "Security & Compliance",
         desciption : "Monitor network security policies, ensuring compliance with IT regulations.",
-        category : "Cyber Security"
+        category : "Cyber Security",
+        link: "/internship/computer-science/software-developer"
     },
 
 ]

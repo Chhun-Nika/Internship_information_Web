@@ -23,7 +23,7 @@ const Business = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="p-8">
+      <main className="p-8 font-quicksand pt-15 pl-25 mb-40">
         {/* Search Bar */}
         <div>
           <SearchBar 
@@ -54,8 +54,10 @@ const Business = () => {
                 logo={job.logo}
                 company={job.company}
                 picture={job.picture}
-                title={job.tittle}
+                tittle={job.tittle}
                 description={job.desciption}
+                link={job.link}
+                item={job}
               />
             ))
           ) : (

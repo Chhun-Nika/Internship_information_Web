@@ -5,7 +5,6 @@ const Header = () => {
   return (
     <header className="sticky top-0 bg-white text-white p-7 shadow-lg z-10 flex justify-center">
       <div className="container ml-10 mr-10 flex justify-between items-center">
-        <h1 className="main-color font-madimi text-4xl font-normal">innerSphere</h1>
         <NavLink
           to="/"
           className="main-color font-madimi text-4xl font-normal"
@@ -34,11 +33,11 @@ const Header = () => {
           >ABOUT US</NavLink>
 
           <NavLink
-            to="/contact-us"
+            to="/favorite"
             className={({ isActive }) => 
               `${isActive ? 'main-color' : 'gray-color'} hover:text-yellow-500`
             }
-          >CONTACT US</NavLink>
+          >FAVORITE</NavLink>
         </nav>
       </div>
     </header>

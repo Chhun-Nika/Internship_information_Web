@@ -50,7 +50,7 @@ const SoftwareDeveloper = () => {
             </div>
 
             {/* job description */}
-            <div className="mt-20">
+            <div className="mt-25">
                 <h2 className="main-color text-3xl font-semibold mb-10">Job Description</h2>
                 <p className="text-lg darkgray-color font-medium mb-6">As a Software Developer Intern at Smart Axiata, you will be responsible for : </p>
                 <Listing DataList={JobDescription} />

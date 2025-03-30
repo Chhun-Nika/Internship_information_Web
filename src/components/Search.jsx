@@ -4,7 +4,7 @@ const Search = ({ title, description, placement, placeholder, onChange }) => {
     return (
         <div className={`relative flex flex-col ${placement} space-y-4 w-full`}>
             <h2 className="lightblue-color text-3xl font-semibold ">{title}</h2>
-            <p className="darkgray-color font-medium mb-10">{description}</p>
+            <p className="darkgray-color font-medium mb-10 w-200 mt-2 leading-relaxed">{description}</p>
             <div className="relative w-1/2 mb-4 h-12">
                 <input
                     type="text"
