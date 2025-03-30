@@ -1,12 +1,79 @@
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import SearchBar from '../components/Search'
+import ItemBox from "../components/ItemBox"; 
+import ComputerScienceData from "../data/ComputerScienceData";
 
 const ComputerScience = () => {
+  const [category, setCategory] = useState("All");
+  const [searchTerm, setSearchTerm] = useState("");
+
+  // Ensure filtering is based on category AND search term
+  const filteredData = ComputerScienceData.filter((job) => {
+    const matchesCategory = category === "All" || job.category === category;
+    const matchesSearch =
+      searchTerm === "" ||
+      job.tittle.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      job.company.toLowerCase().includes(searchTerm.toLowerCase());
+
+    return matchesCategory && matchesSearch;
+  });
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="p-8">
-        
+      <main className="p-8 font-quicksand pt-15 pl-25 mb-40">
+        {/* Search Bar */}
+        <div>
+          <SearchBar 
+            title="Computer Science" 
+            description="Discover Diverse Internship Opportunities in Computer Science and Technology, Gaining Hands-On Experience in the Digital World"
+            placement="items-center text-center"
+            placeholder="Search company name or job title"
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+
+        </div>
+
+        <div className=" main-color text-2xl font-semibold font-quicksand pt-15 pb-5">
+          <h1>Base on your Specialization</h1>
+        </div>
+
+        {/* Category Filters */}
+        <div className="flex space-x-4 justify-start my-4 font-quicksand pb-10">
+          {["All", "Software Engineering", "Data Science"].map((cat) => (
+            <button 
+              key={cat} 
+              onClick={() => setCategory(cat)}
+              className={`px-4 py-2 rounded ${category === cat ? 
+                "bg-[#628ace] hover:bg-[#8aa9d1] transition-colors duration-300 ease-in-out text-white font-medium hover:cursor-pointer shadow-[0px_2px_6px_rgba(0,0,0,0.3)]" : "text-[#606060]  hover:cursor-pointer hover:shadow-[0px_4px_8px_rgba(0,0,0,0.2)] font-medium transition-colors duration-300 ease-in-out"
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
+        {/* Internship Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredData.length > 0 ? (
+            filteredData.map((job, index) => (
+              <ItemBox
+                key={index}
+                logo={job.logo}
+                company={job.company}
+                picture={job.picture}
+                tittle={job.tittle}
+                description={job.desciption}
+                link={job.link}
+                item={job}
+              />
+            ))
+          ) : (
+            <p className="text-center text-gray-500 col-span-3">No internships found.</p>
+          )}
+        </div>
       </main>
       <Footer />
     </div>
