@@ -6,6 +6,7 @@ import ContactUs from './pages/ContactUs';
 import ComputerSciencePage from './pages/ComputerScience';
 import TelecomPage from './pages/Network';
 import DigitalBusinessPage from './pages/Business';
+import SoftwareDeveloper from './pages/SoftwareDeveloper';
 
 
 const App = () => {
@@ -19,6 +20,8 @@ const App = () => {
         <Route path="/internship/computer-science" element={<ComputerSciencePage />} />
         <Route path="/internship/telecom-networking" element={<TelecomPage />} />
         <Route path="/internship/digital-business" element={<DigitalBusinessPage />} />
+        <Route path="/internship/computer-science/software-developer" element={<SoftwareDeveloper />} />
+
       </Routes>
     </Router>
   );
